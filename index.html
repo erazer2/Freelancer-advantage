@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+    <link id="styleToUse" rel="stylesheet" href="simpleStyle.css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is a free lancer cheaper than a company?</title>
+    <script src="interface.js"></script>
+    <script src="calculations.js"></script>
+
+    
+</head>
+<body>
+
+<div id="menu"> 
+
+</div>    
+
+
+<div id="mainCalculatorBox">
+
+    <h2 id="mainHeader">Employment Cost</h2>
+    
+  
+
+    <div id="calculationsBit">
+
+        <div id="calculatorBrief">Let us see how much the employer needs to charge. A free lancer or a self employed person may well be cheaper.Or should the job be done yourself.
+            
+<div id="inputsPart">
+
+ 
+<hr style="width:50%">
+
+<div id="electricSection">
+
+
+<div class="inputTitle">Annual Employee Salary</div>
+<input class="dataEntryBox" id="annualEmployeeSalary" value="19760"><div class="unitsTitle">GBP</div>
+<br>
+
+<div class="inputTitle">Hourly Employee Salary</div>
+<input class="dataEntryBox" id="hourlyEmployeeSalary" value="9.50"><div class="unitsTitle">GBP</div>
+<br>
+
+<div class="inputTitle">Hours Work Per Week</div>
+<input class="dataEntryBox" id="employeeHoursPerWeek" value="40"><div class="unitsTitle">GBP</div>
+<br>
+
+</div>
+
+
+
+
+</div>
+<hr style="width:50%">
+<div id="outputsPart">
+
+    <div class="inputTitle">Employer National Insurance to pay for employee</div>
+    <div id="employerNI">1604.33</div>
+    <div class="unitsTitle">GBP</div>
+
+
+    <div class="inputTitle">Employer Pension Contribution to pay for employee</div>
+    <div id="employerPension">592.8</div>
+    <div class="unitsTitle">GBP</div>
+
+    <div class="inputTitle">VAT to pay</div>
+    <div id="vat">4391.43</div>
+    <div class="unitsTitle">GBP</div>
+
+    <div class="inputTitle">Total Extra Company Needs To Charge</div>
+    <div id="totalExtraCharges">6588.56</div>
+    <div class="unitsTitle">GBP</div>
+
+    <div class="inputTitle">Annual Minimum charge to customer</div>
+    <div id="annualChargeToCustomer">26348.13</div>
+    <div class="unitsTitle">GBP</div>
+
+    <div class="inputTitle">Hourly Minimum charge to customer note employees get a paid 5.6weeks holiday per year</div>
+    <div id="hourlyChargeToCustomer">14.20</div>
+    <div class="unitsTitle">GBP</div>
+
+
+</div>
+
+<br>
+
+<div id="freeLancerSavings">Using a free lancer would save you £4.70 per hour,49% cheaper or 29mins more time be put into the project every hour</div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<script>
+    annualPriceCustomerMustPay();
+    
+document.getElementById("hourlyEmployeeSalary").addEventListener("keyup",changedHourlySalary);
+document.getElementById("annualEmployeeSalary").addEventListener("keyup",changedAnnualSalary);
+document.getElementById("employeeHoursPerWeek").addEventListener("keyup",changedHourlySalary);//changing hours per week affects same as changing hourly salary
+
+
+
+</script>
+
+<button onclick="comparedToFreeLancer()">use freelancer</button>
+
+<img id="toggleStyleIcon" style="display:none;"src="img/darkmodeIcon.svg" onclick="toggleTheStyle()">
+
+</div></div></div></body></html>

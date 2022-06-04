@@ -1,0 +1,219 @@
+
+#mainCalculatorBox{
+
+    float: left;
+
+    background-color: #005eb8;
+    
+    width:80vw;
+padding-bottom: 10px;
+border-radius: 10px;
+}
+
+#mainHeader{
+
+    color: white;
+    
+    padding-left: 20px;
+    padding-right: 200px;
+}
+
+body{
+
+    font-family: Frutiger W01, Arial, sans-serif;
+}
+
+
+#calculationsBit{
+
+
+    background-color: white;
+   
+    margin-left: 1vw;
+    width:78vw;
+    border-radius: 10px;
+    
+    
+}
+
+#inputsPart{
+
+    padding-top:30px;
+
+    
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.inputTitle{
+
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+#calculatorBrief{
+
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+   
+    
+}
+
+#outputsPart{
+    padding-top:10px;
+    padding-bottom:10px;
+
+    padding-left: 10px; 
+    padding-right: 10px; 
+
+    
+    display: inline-block;
+    
+}
+
+.dataEntryBox{
+    border-radius: 5px;
+    height: 30px;
+    filter: drop-shadow(0.10em 0.10em 0.1em);
+    border-color: grey;
+    text-align: center;
+    
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.904);
+    margin-bottom: 10px;
+    color:black;
+    font-weight: bold;
+
+    
+}
+
+.unitsTitle{
+    color: black;
+   
+    
+    border-radius: 10px;
+    color: grey;
+}
+
+#result{
+
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+
+#subMenu{
+
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+button{
+
+    color:white;
+    background-color:black;
+
+}
+
+
+#electricButton{
+
+    width: 50px;
+    padding-right: 10px;
+    
+}
+
+#hydroCarbonButton{
+    width:50px;
+    padding-left: 50px;
+    padding-right: 10px;
+    
+}
+
+#electricButton:hover{
+
+    
+    filter: drop-shadow(0 0 0.75rem blue);
+}
+
+#hydroCarbonButton:hover{
+
+    filter: drop-shadow(0 0 0.75rem blue);
+    
+}
+
+#electricButton:active {
+
+    
+    width: 52px;
+    transition: width 0.25s;
+}
+
+#hydroCarbonButton:active {
+
+    width: 52px;
+    transition: width 0.25s;
+    
+}
+
+.electricButtonSelected{
+
+    
+    filter: drop-shadow(0 0 0.75rem rgb(255, 238, 0));
+}
+
+.hydroCarbonButtonSelected{
+
+    filter: drop-shadow(0 0 0.75rem rgb(255, 238, 0));
+    
+}
+
+.buttonHeadings{
+
+    color:rgb(255, 255, 255);
+    font-weight: normal;
+    background-color: #005eb8;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+.buttonHeadings:hover{
+
+    color:rgb(255, 255, 255);
+    font-weight: normal;
+    background-color: #a300b8;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+.buttonHeadingSelected{
+
+    color:rgb(255, 255, 255);
+    font-weight: normal;
+    background-color:#159fe3;
+    border-radius: 5px;
+    padding:5px;
+}
+
+#toggleStyleIcon{
+
+    width:40px;
+   }
+
+   #co2details{
+    font-size: small;
+    color: grey;
+}
+@media only screen and (max-width: 440px) {
+    #headingHydroCarbonButton {display: none; }
+    #headingElectricButton {display: none; }
+}
