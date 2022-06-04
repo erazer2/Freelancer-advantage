@@ -35,6 +35,7 @@ let changedAnnualSalary=()=>{
   calcHourlySalary();
   annualPriceCustomerMustPay();
   hourlyPriceCustomerMustPay();
+  comparedToFreeLancer();
 
 }
 
@@ -42,5 +43,6 @@ let changedHourlySalary=()=>{
   calcAnnualSalary();
   annualPriceCustomerMustPay();
   hourlyPriceCustomerMustPay();
+  comparedToFreeLancer();
 }
 
